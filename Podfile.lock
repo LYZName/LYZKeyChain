@@ -1,0 +1,12 @@
+PODS:
+  - KeychainItemWrapper (1.2)
+
+DEPENDENCIES:
+  - KeychainItemWrapper (~> 1.2)
+
+SPEC CHECKSUMS:
+  KeychainItemWrapper: 67a240172ed669842bc6bc13ed554dcd50469fa2
+
+PODFILE CHECKSUM: 544a7603f4f43006096f01601f22561a8fcc1f23
+
+COCOAPODS: 1.0.1

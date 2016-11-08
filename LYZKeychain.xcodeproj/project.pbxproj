@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A48619174BACFE7423AE14EB /* libPods-LYZKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4204218A3A0C2A93D7ED1361 /* libPods-LYZKeychain.a */; };
 		D690A98E1DD1738C009CC215 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D690A98D1DD1738C009CC215 /* main.m */; };
 		D690A9911DD1738C009CC215 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D690A9901DD1738C009CC215 /* AppDelegate.m */; };
 		D690A9941DD1738C009CC215 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D690A9931DD1738C009CC215 /* ViewController.m */; };
 		D690A9971DD1738C009CC215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D690A9951DD1738C009CC215 /* Main.storyboard */; };
 		D690A9991DD1738C009CC215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D690A9981DD1738C009CC215 /* Assets.xcassets */; };
 		D690A99C1DD1738C009CC215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D690A99A1DD1738C009CC215 /* LaunchScreen.storyboard */; };
+		D690A9A51DD173BB009CC215 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D690A9A41DD173BB009CC215 /* Security.framework */; };
+		D690A9A81DD174EB009CC215 /* LYZKeychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D690A9A71DD174EB009CC215 /* LYZKeychainManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		298E745CC633230AD9598AF7 /* Pods-LYZKeychain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYZKeychain.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYZKeychain/Pods-LYZKeychain.release.xcconfig"; sourceTree = "<group>"; };
+		4204218A3A0C2A93D7ED1361 /* libPods-LYZKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYZKeychain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F7C4888CACF287045542DD /* Pods-LYZKeychain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYZKeychain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYZKeychain/Pods-LYZKeychain.debug.xcconfig"; sourceTree = "<group>"; };
 		D690A9891DD1738C009CC215 /* LYZKeychain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYZKeychain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D690A98D1DD1738C009CC215 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D690A98F1DD1738C009CC215 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		D690A9981DD1738C009CC215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D690A99B1DD1738C009CC215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D690A99D1DD1738C009CC215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D690A9A41DD173BB009CC215 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D690A9A61DD174EB009CC215 /* LYZKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYZKeychainManager.h; sourceTree = "<group>"; };
+		D690A9A71DD174EB009CC215 /* LYZKeychainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYZKeychainManager.m; sourceTree = "<group>"; };
+		D690A9A91DD184A8009CC215 /* LYZKeychain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LYZKeychain.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D690A9A51DD173BB009CC215 /* Security.framework in Frameworks */,
+				A48619174BACFE7423AE14EB /* libPods-LYZKeychain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		391531FCA2B40A7783C4CC66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79F7C4888CACF287045542DD /* Pods-LYZKeychain.debug.xcconfig */,
+				298E745CC633230AD9598AF7 /* Pods-LYZKeychain.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D690A9801DD1738C009CC215 = {
 			isa = PBXGroup;
 			children = (
 				D690A98B1DD1738C009CC215 /* LYZKeychain */,
 				D690A98A1DD1738C009CC215 /* Products */,
+				D690A9A31DD173BA009CC215 /* Frameworks */,
+				391531FCA2B40A7783C4CC66 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +81,13 @@
 		D690A98B1DD1738C009CC215 /* LYZKeychain */ = {
 			isa = PBXGroup;
 			children = (
+				D690A9A91DD184A8009CC215 /* LYZKeychain.entitlements */,
 				D690A98F1DD1738C009CC215 /* AppDelegate.h */,
 				D690A9901DD1738C009CC215 /* AppDelegate.m */,
 				D690A9921DD1738C009CC215 /* ViewController.h */,
 				D690A9931DD1738C009CC215 /* ViewController.m */,
+				D690A9A61DD174EB009CC215 /* LYZKeychainManager.h */,
+				D690A9A71DD174EB009CC215 /* LYZKeychainManager.m */,
 				D690A9951DD1738C009CC215 /* Main.storyboard */,
 				D690A9981DD1738C009CC215 /* Assets.xcassets */,
 				D690A99A1DD1738C009CC215 /* LaunchScreen.storyboard */,
@@ -79,6 +105,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D690A9A31DD173BA009CC215 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D690A9A41DD173BB009CC215 /* Security.framework */,
+				4204218A3A0C2A93D7ED1361 /* libPods-LYZKeychain.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D690A9A01DD1738C009CC215 /* Build configuration list for PBXNativeTarget "LYZKeychain" */;
 			buildPhases = (
+				83D8D339DC78526EB218AF06 /* [CP] Check Pods Manifest.lock */,
 				D690A9851DD1738C009CC215 /* Sources */,
 				D690A9861DD1738C009CC215 /* Frameworks */,
 				D690A9871DD1738C009CC215 /* Resources */,
+				BD5770B5EC04E7F50AFF6574 /* [CP] Embed Pods Frameworks */,
+				4E3F6D93862753A23EB0BA5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +150,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2K83MC6PMU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -146,12 +189,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E3F6D93862753A23EB0BA5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYZKeychain/Pods-LYZKeychain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D8D339DC78526EB218AF06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD5770B5EC04E7F50AFF6574 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYZKeychain/Pods-LYZKeychain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D690A9851DD1738C009CC215 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D690A9941DD1738C009CC215 /* ViewController.m in Sources */,
+				D690A9A81DD174EB009CC215 /* LYZKeychainManager.m in Sources */,
 				D690A9911DD1738C009CC215 /* AppDelegate.m in Sources */,
 				D690A98E1DD1738C009CC215 /* main.m in Sources */,
 			);
@@ -269,8 +361,10 @@
 		};
 		D690A9A11DD1738C009CC215 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F7C4888CACF287045542DD /* Pods-LYZKeychain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LYZKeychain/LYZKeychain.entitlements;
 				DEVELOPMENT_TEAM = 2K83MC6PMU;
 				INFOPLIST_FILE = LYZKeychain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -281,8 +375,10 @@
 		};
 		D690A9A21DD1738C009CC215 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298E745CC633230AD9598AF7 /* Pods-LYZKeychain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LYZKeychain/LYZKeychain.entitlements;
 				DEVELOPMENT_TEAM = 2K83MC6PMU;
 				INFOPLIST_FILE = LYZKeychain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -310,6 +406,7 @@
 				D690A9A21DD1738C009CC215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
